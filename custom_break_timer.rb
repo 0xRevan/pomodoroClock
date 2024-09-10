@@ -18,7 +18,7 @@ end
 # break timer
 #takes a break equal to the time provided
 # countdown
-def takeFive(minutes)
+def take_five(minutes)
   seconds = minutes * 60
 
 while seconds > 0
@@ -53,7 +53,7 @@ def countdown_timer
 
 if input == 'start'
     pomodoro_time(session_minutes)
-    takeFive(session_break)
+    take_five(session_break)
   elsif input == 'exit'
     puts "There will be no tomatoes today, sir! "
   break

@@ -1,0 +1,12 @@
+General Feedback:
+	1.	Structure and Readability:
+	•	Your code is functional and the logic is clear. However, there are opportunities to enhance readability by improving indentation, method naming consistency, and simplifying conditionals.
+	•	Ruby emphasizes clear, concise, and expressive code, so let’s polish that further.
+	2.	Method Naming:
+	•	Method names should follow snake_case as per Ruby conventions. You’ve used takeFive, which should be renamed to take_five.
+	•	Descriptive method names make code easier to read and maintain. pomodoro_time is good, but perhaps start_pomodoro_timer or run_pomodoro_session would be even clearer.
+	3.	Loop and Flow Control:
+	•	The use of loop do is appropriate, but handling the flow can be cleaner using a case statement instead of nested if/else.
+	•	Breaking the loop when input is 'exit' can be handled more cleanly to avoid deeply nested conditionals.
+	4.	Duplication:
+	•	The countdown logic in both pomodoro_time and take_five is nearly identical. Consider extracting this logic into a single method to avoid code duplication.
