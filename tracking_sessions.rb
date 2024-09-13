@@ -4,15 +4,16 @@ if input == 'start'
 
   #adds 1 to pomodoro count
     pomodoro_count +=1
-    puts "\nThat's one tomatoe session completed #{pomodoro_count}"
 
   take_five(session_break)
     take_five_count += 1
-    puts "\nYerr a lazy one #{take_five_count}"
 
 
 elsif input == 'exit'
-  puts "There will be no tomatoes today, sir! "
+  puts "\n-- Session Summary --"
+    puts "total completed sessions: #{pomodoro_count}"
+    puts "total completed breaks: #{take_five_count}"
+      puts "There will be no tomatoes today, sir! "
 break
 
 else

@@ -1,5 +1,4 @@
-pomodoro_count = 0
-take_five_count = 0
+
 
 # countdown
 def pomodoro_time(minutes)
@@ -19,7 +18,7 @@ end
 end
 
 # break timer
-#takes a break equal to the time provided
+# takes a break equal to the time provided
 # countdown
 def take_five(minutes)
   seconds = minutes * 60
@@ -33,14 +32,15 @@ while seconds > 0
   sleep(1)
   seconds -= 1
 end
-
-  puts "\nTake give, chefs!."
-end
+  end
 
 #allows user to input custom timings
 #the user flow
 def countdown_timer
   puts "welcome to tracking time through tomatoes!"
+
+pomodoro_count = 0
+take_five_count = 0
 
   loop do
 #user enters custom time
@@ -60,23 +60,23 @@ if input == 'start'
 
   #adds 1 to pomodoro count
     pomodoro_count +=1
-    puts "\nThat's one tomatoe session completed #{pomodoro_count}"
 
   take_five(session_break)
     take_five_count += 1
-    puts "\nYerr a lazy one #{take_five_count}"
 
 
 elsif input == 'exit'
-  puts "There will be no tomatoes today, sir! "
+  puts "\n-- Session Summary --"
+    puts "total completed sessions: #{pomodoro_count}"
+    puts "total completed breaks: #{take_five_count}"
+      puts "There will be no tomatoes today, sir! "
 break
 
 else
   puts "Error, input not found. Please enter 'start'/'exit, or-"
   end
 end
-
-
 end
+
 #the user calls the timer. It barks.
 countdown_timer
